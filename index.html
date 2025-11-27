@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gujarati Trader</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        background: #0f141c;
+        font-family: 'Inter', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    /* Circle Logo */
+    .logo img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #2ecc71;
+        animation: pop 1.2s ease forwards;
+        opacity: 0;
+        transform: scale(.7);
+    }
+
+    @keyframes pop {
+        0% { opacity: 0; transform: scale(.7); }
+        60% { opacity: 1; transform: scale(1.1); }
+        100% { opacity: 1; transform: scale(1); }
+    }
+
+    h1 { margin-top: 18px; font-size: 30px; font-weight: 700; }
+    h2 { color: #2ecc71; margin-bottom: 20px; }
+
+    /* Join Buttons */
+    .join-btn {
+        margin: 20px auto;
+        padding: 14px 22px;
+        background: white;
+        color: black;
+        font-weight: 700;
+        border-radius: 40px;
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        transition: .2s ease;
+    }
+
+    .join-btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 18px rgba(255,255,255,0.2);
+    }
+
+    /* Candlestick animation */
+    .candles {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .candle {
+        width: 14px;
+        border-radius: 5px;
+        animation: grow 1.2s infinite ease-in-out alternate;
+    }
+
+    .green { background: #2ecc71; height: 70px; }
+    .red { background: #e74c3c; height: 50px; }
+
+    .candle:nth-child(2) { animation-delay: .2s; }
+    .candle:nth-child(3) { animation-delay: .4s; }
+    .candle:nth-child(4) { animation-delay: .6s; }
+
+    @keyframes grow {
+        0% { transform: scaleY(.5); }
+        100% { transform: scaleY(1.1); }
+    }
+
+    /* RGB Neon Border */
+    .details {
+        margin: 25px auto;
+        padding: 22px;
+        max-width: 420px;
+        border-radius: 16px;
+        position: relative;
+        background: rgba(255,255,255,0.06);
+        backdrop-filter: blur(6px);
+        z-index: 1;
+    }
+
+    .details::before {
+        content: "";
+        position: absolute;
+        inset: -4px;
+        border-radius: 20px;
+        background: conic-gradient(
+            #ff0055,
+            #ff9900,
+            #ffee00,
+            #00ffb3,
+            #0066ff,
+            #aa00ff,
+            #ff0055
+        );
+        filter: blur(14px);
+        animation: spin 5s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes spin {
+        100% { transform: rotate(360deg); }
+    }
+
+    p { line-height: 1.6; }
+</style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1610585403443731');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1610585403443731&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+<!-- Logo -->
+<div class="logo">
+    <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Logo">
+</div>
+
+<h1>GUJARATI TRADER</h1>
+<h2>BankNifty • Nifty • Options Trading</h2>
+
+<!-- 🔼 NEW JOIN BUTTON ABOVE CANDLESTICKS -->
+<a class="join-btn" href="https://t.me/+8I_jmxQJMHI4MjFl" target="_blank">
+    <i class="fa-brands fa-telegram"></i>
+    Join Telegram
+    <i class="fa-brands fa-telegram"></i>
+</a>
+
+<!-- Candlesticks -->
+<div class="candles">
+    <div class="candle green"></div>
+    <div class="candle red"></div>
+    <div class="candle green"></div>
+    <div class="candle red"></div>
+</div>
+
+<!-- Details Box -->
+<div class="details">
+    <p>• Daily trading setups for BankNifty & Nifty</p>
+    <p>• Entry–Exit levels with risk management</p>
+    <p>• Live alerts & trading community</p>
+
+    <!-- Existing lower join button -->
+    <a class="join-btn" href="https://t.me/+8I_jmxQJMHI4MjFl" target="_blank">
+        <i class="fa-brands fa-telegram"></i>
+        Join Telegram
+        <i class="fa-brands fa-telegram"></i>
+    </a>
+</div>
+
+<p style="opacity:.6; font-size:12px;">Educational purpose only. Trading is risky.</p>
+
+</body>
+</html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html>
